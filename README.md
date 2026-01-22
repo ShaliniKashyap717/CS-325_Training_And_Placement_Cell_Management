@@ -10,15 +10,6 @@ This document represents the **planning and requirement analysis phase** of the 
 
 ---
 
-## Objective
-
-- To analyze the requirements of a Training and Placement Cell  
-- To identify entities, attributes, and relationships involved in the system  
-- To design an initial conceptual database model  
-- To prepare a strong foundation for ER diagram creation and database implementation  
-
----
-
 ## Scope of the System
 
 The proposed system will support:
@@ -27,6 +18,15 @@ The proposed system will support:
 - Tracking of student job applications and placement status  
 - Management of training programs conducted by the placement cell  
 - Generation of placement and training-related reports  
+
+---
+
+## Objective
+
+- To analyze the requirements of a Training and Placement Cell  
+- To identify entities, attributes, and relationships involved in the system  
+- To design an initial conceptual database model  
+- To prepare a strong foundation for ER diagram creation and database implementation  
 
 ---
 
@@ -57,26 +57,12 @@ The proposed system will support:
 
 ---
 
-## Non-Functional Requirements
-
-- Ensure data consistency and referential integrity  
-- Prevent duplicate records using primary key and unique constraints  
-- Minimize data redundancy through normalization  
-- Normalize the database up to Third Normal Form (3NF)  
-- Support efficient querying and report generation  
-- Ensure secure handling of student and company data  
-- Provide scalability to support multiple batches, companies, and job profiles  
-
----
-
 ## Identified Entities and Attributes
 
 ### Student
 - StudentID (Primary Key)  
 - Name  
-- RollNumber  
-- Branch  
-- Year  
+- RollNumber
 - CGPA  
 - Email  
 - PhoneNumber  
