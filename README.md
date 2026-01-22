@@ -2,12 +2,10 @@
 **DBMS Semester Project – Planning & Requirement Analysis**
 
 ---
-
 ## Project Overview
 
 The **Training and Placement Cell Management System** is a proposed database-driven system intended to manage and organize the activities of a college Training and Placement Cell.  
 This document represents the **planning and requirement analysis phase** of the project and focuses on identifying the data requirements, entities, relationships, and database design considerations before implementation.
-
 ---
 
 ## Scope of the System
@@ -20,14 +18,12 @@ The proposed system will support:
 - Generation of placement and training-related reports  
 
 ---
-
 ## Objective
 
 - To analyze the requirements of a Training and Placement Cell  
 - To identify entities, attributes, and relationships involved in the system  
 - To design an initial conceptual database model  
 - To prepare a strong foundation for ER diagram creation and database implementation  
-
 ---
 
 ## Sources of Requirement Gathering
@@ -39,7 +35,6 @@ The proposed system will support:
 - Understanding academic DBMS laboratory and semester project requirements  
 
 ---
-
 ## Functional Requirements
 
 - Store student personal, academic, and placement-related information  
@@ -54,7 +49,6 @@ The proposed system will support:
 - Allow students to enroll in multiple training programs  
 - Store attendance and completion status for training programs  
 - Allow retrieval of placement statistics and training data for analysis and reporting  
-
 ---
 
 ## Identified Entities and Attributes
@@ -63,6 +57,8 @@ The proposed system will support:
 - StudentID (Primary Key)  
 - Name  
 - RollNumber
+- Branch
+- Active Backlogs
 - CGPA  
 - Email  
 - PhoneNumber  
@@ -153,7 +149,6 @@ The ER diagram will be designed in the next phase of the project.
 - The database schema will follow DBMS best practices  
 
 ---
-
 ## Assumptions
 
 - Each student is uniquely identified by StudentID  
@@ -161,7 +156,6 @@ The ER diagram will be designed in the next phase of the project.
 - A company can offer more than one job profile  
 - Training programs can have multiple participants  
 - Placement status is tracked individually for each application  
-
 ---
 
 ## Deliverables of This Phase
@@ -175,8 +169,9 @@ The ER diagram will be designed in the next phase of the project.
 
 ## Conclusion
 
-This document outlines the planning and requirement analysis for the Training and Placement Cell Management System.  
-It provides a clear understanding of system requirements and serves as the foundation for subsequent phases including ER diagram creation, relational schema design, normalization, SQL implementation, and report generation.
+This document presents a comprehensive overview of the planning and requirement analysis for the Training and Placement Cell Management System. It clearly defines the system objectives, functional requirements, and overall scope, establishing a strong foundation for the development process.
+
+The analysis carried out in this phase supports the upcoming stages of the project, including ER diagram design, relational schema formulation, database normalization, SQL implementation, and report generation. Together, these phases will ensure the system is well-structured, efficient, and capable of effectively managing training and placement activities.
 
 ---
 
