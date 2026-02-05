@@ -4,8 +4,9 @@
 ---
 ## Project Overview
 
-The **Training and Placement Cell Management System** is a proposed database-driven system intended to manage and organize the activities of a college Training and Placement Cell.  
-This document represents the **planning and requirement analysis phase** of the project and focuses on identifying the data requirements, entities, relationships, and database design considerations before implementation.
+The Training and Placement Cell Management System is a proposed database-driven system intended to manage and organize the activities of a college Training and Placement Cell.  
+This document represents the planning and requirement analysis phase of the project and focuses on identifying the data requirements, entities, relationships, and database design considerations before implementation.
+
 ---
 
 ## Scope of the System
