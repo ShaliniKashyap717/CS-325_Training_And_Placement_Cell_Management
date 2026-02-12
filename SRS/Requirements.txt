@@ -1,0 +1,181 @@
+Training and Placement Cell Management System
+DBMS Semester Project – Planning & Requirement Analysis
+
+------------------------------------------------------------------
+
+Project Overview
+
+The Training and Placement Cell Management System is a proposed database-driven system intended to manage and organize the activities of a college Training and Placement Cell.
+
+This document represents the planning and requirement analysis phase of the project and focuses on identifying the data requirements, entities, relationships, and database design considerations before implementation.
+
+------------------------------------------------------------------
+
+Scope of the System
+
+The proposed system will support the following activities:
+
+1. Management of student academic and placement-related data
+2. Management of company and job profile details
+3. Tracking of student job applications and placement status
+4. Management of training programs conducted by the placement cell
+5. Generation of placement and training-related reports
+
+------------------------------------------------------------------
+
+Objectives
+
+The main objectives of this project are:
+
+1. To analyze the requirements of a Training and Placement Cell
+2. To identify entities, attributes, and relationships involved in the system
+3. To design an initial conceptual database model
+4. To prepare a strong foundation for ER diagram creation and database implementation
+
+------------------------------------------------------------------
+
+Sources of Requirement Gathering
+
+The requirements for the system were gathered using the following methods:
+
+1. Observation of real-world Training and Placement Cell processes
+2. Discussions with seniors, placement coordinators, and faculty members
+3. Analysis of existing placement records such as student lists, company details, and job offers
+4. Study of similar Training and Placement Management Systems available online
+5. Understanding academic DBMS laboratory and semester project requirements
+
+------------------------------------------------------------------
+
+Functional Requirements
+
+The system should be able to:
+
+1. Store student personal, academic, and placement-related information
+2. Ensure each student is uniquely identified using StudentID, Roll Number, and Email
+3. Store company information including HR contact details
+4. Allow companies to offer multiple job profiles
+5. Define job profile details such as role, package, job type, and eligibility criteria
+6. Enable students to apply for multiple job profiles
+7. Prevent a student from applying to the same job profile more than once
+8. Track application status such as Applied, Shortlisted, Selected, and Rejected
+9. Maintain records of training programs conducted by the placement cell
+10. Allow students to enroll in multiple training programs
+11. Store attendance and completion status for training programs
+12. Retrieve placement statistics and training data for analysis and reporting
+
+------------------------------------------------------------------
+
+Identified Entities and Attributes
+
+Student
+StudentID (Primary Key)
+Name
+RollNumber
+Branch
+ActiveBacklogs
+CGPA
+Email
+PhoneNumber
+ResumeLink
+
+Company
+CompanyID (Primary Key)
+CompanyName
+Location
+IndustryType
+HRName
+HRContact
+
+JobProfile
+JobID (Primary Key)
+CompanyID (Foreign Key)
+Role
+Package
+JobType
+EligibilityCGPA
+
+Application
+ApplicationID (Primary Key)
+StudentID (Foreign Key)
+JobID (Foreign Key)
+ApplicationDate
+ApplicationStatus
+
+TrainingProgram
+TrainingID (Primary Key)
+Title
+TrainerName
+StartDate
+EndDate
+Description
+
+TrainingEnrollment
+EnrollmentID (Primary Key)
+StudentID (Foreign Key)
+TrainingID (Foreign Key)
+AttendancePercentage
+CompletionStatus
+
+------------------------------------------------------------------
+
+Identified Relationships
+
+1. A Company can offer multiple JobProfiles (One-to-Many relationship)
+2. A Student can apply for multiple JobProfiles (Many-to-Many relationship)
+3. A JobProfile can receive applications from multiple Students
+4. The many-to-many relationship between Student and JobProfile is resolved using the Application entity
+5. A Student can enroll in multiple TrainingPrograms (Many-to-Many relationship)
+6. A TrainingProgram can have multiple enrolled Students
+7. The many-to-many relationship between Student and TrainingProgram is resolved using the TrainingEnrollment entity
+
+------------------------------------------------------------------
+
+Conceptual ER Model (Planned)
+
+Entities included in the conceptual ER model are:
+Student, Company, JobProfile, Application, TrainingProgram, and TrainingEnrollment.
+
+Relationships in the ER model include:
+Company offers JobProfile (One-to-Many)
+Student applies for JobProfile (Many-to-Many via Application)
+Student enrolls in TrainingProgram (Many-to-Many via TrainingEnrollment)
+
+The ER diagram will be designed in the next phase of the project.
+
+------------------------------------------------------------------
+
+Database Design Considerations
+
+1. Each entity will be mapped to a separate table
+2. Primary keys will uniquely identify records
+3. Foreign keys will enforce referential integrity
+4. Associative entities will be used to resolve many-to-many relationships
+5. Constraints will be applied to maintain data validity
+6. The database schema will follow standard DBMS best practices
+
+------------------------------------------------------------------
+
+Assumptions
+
+1. Each student is uniquely identified by StudentID
+2. A student can apply to multiple job profiles but only once per job profile
+3. A company can offer more than one job profile
+4. Training programs can have multiple participants
+5. Placement status is tracked individually for each application
+
+------------------------------------------------------------------
+
+Deliverables of This Phase
+
+1. Requirement analysis document
+2. List of entities and their attributes
+3. Identification of relationships between entities
+4. Conceptual design plan for ER diagram creation
+
+------------------------------------------------------------------
+
+Conclusion
+
+This document presents a comprehensive overview of the planning and requirement analysis for the Training and Placement Cell Management System. It clearly defines the system objectives, functional requirements, and overall scope, establishing a strong foundation for the development process.
+
+The analysis carried out in this phase supports the upcoming stages of the project, including ER diagram design, relational schema formulation, database normalization, SQL implementation, and report generation. These stages will ensure the system is well-structured, efficient, and capable of effectively managing training and placement activities.
