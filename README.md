@@ -170,26 +170,12 @@ The ER diagram will be designed in the next phase of the project.
 
 ## Conclusion
 
-<<<<<<< HEAD
+
 This document outlines the planning and requirement analysis for the Training and Placement Cell Management System.  
 It serves as the foundation for subsequent phases including ER diagram creation, relational schema design, normalization, SQL implementation, and report generation.
 
 ## Developed By:
-Shagun Rana (23BCS105)
+Shagun Rana     (23BCS105)
 Shalini Kashyap (23BCS106)
 Shanpreet Singh (23BCS107)
 Shivansh Chadda (23BCS108)
-=======
-This document presents a comprehensive overview of the planning and requirement analysis for the Training and Placement Cell Management System. It clearly defines the system objectives, functional requirements, and overall scope, establishing a strong foundation for the development process.
-
-The analysis carried out in this phase supports the upcoming stages of the project, including ER diagram design, relational schema formulation, database normalization, SQL implementation, and report generation. Together, these phases will ensure the system is well-structured, efficient, and capable of effectively managing training and placement activities.
-
----
-
-## Developed By
-
-- **Shagun Rana** (23BCS105)  
-- **Shalini Kashyap** (23BCS106)  
-- **Shanpreet Singh** (23BCS107)  
-- **Shivansh Chadda** (23BCS108)  
->>>>>>> 0fff0d018b57d19266784c315bb6e311efa8da45
