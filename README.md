@@ -175,7 +175,11 @@ This document outlines the planning and requirement analysis for the Training an
 It serves as the foundation for subsequent phases including ER diagram creation, relational schema design, normalization, SQL implementation, and report generation.
 
 ## Developed By:
+
 Shagun Rana     (23BCS105)
+
 Shalini Kashyap (23BCS106)
+
 Shanpreet Singh (23BCS107)
-Shivansh Chadda (23BCS108)
+
+Shivansh Chadha (23BCS108)
